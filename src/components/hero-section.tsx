@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 import gsap from "gsap";
 import { useTheme } from "@/contexts/theme-context";
-import { SvgAnimator } from "./ui/svg-animator";
 
 export function HeroSection() {
   const { theme } = useTheme();
@@ -51,7 +50,6 @@ export function HeroSection() {
           </span>
         </h1>
 
-        <SvgAnimator />
         <h2
           ref={(el) => {
             elementsRef.current[1] = el;
